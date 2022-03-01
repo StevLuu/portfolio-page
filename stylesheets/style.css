@@ -1,9 +1,112 @@
+html{
+    background-image: url("../images/KO2_1112.jpg");
+}
 h1{
-    background-color: green;
+    text-align: center;
+}
+body{
+    --header-height: 50px;
+    margin: var(--header-height) 0 0 0;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: --header-height;
+    background-color: rgb(129, 192, 187);
+    display: flex;
+}
+.header-button{
+    width: var(--header-height);
+    flex-shrink: 0;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    width: 250px;
+    transform: translateX(-250px);
+    background: white;
+    transition: transform 0.2s;
+}
+
+.nav--open .links{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .link{
-    padding: 10px;
-    color:black;
+    display: flex;
+    align-items: center;
+    color: rgb(129, 192, 187);
+    font-weight: bold;
+    font-size: 14px;
     text-decoration: none;
+    padding: 12px 15px;
+    background: transform 0.3s;
+}
+
+.link > i{
+    margin-right: 15px;
+}
+
+.link--active,
+.link:hover{
+    color: white;
+    background-color:rgb(128, 202, 196);
+}
+
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background: rgb(7, 83, 78, 0.6);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav--open .nav-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+section#homepage{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        color: rgb(129, 192, 187);
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 12px 15px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px; 
+    }
 }

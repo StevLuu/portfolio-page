@@ -6,102 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <script src = ../scripts/app.js></script>
 </head>
-<header>
-    <nav>
-        <a href="homepage.html" class="link">Homepage</a>
-        <a href="#bio" class="link">About Me</a>
-        <a href="projects.html" class="link">My Projects</a>
-        <a href="resume.html" class="link">Resume</a>
-    </nav>
-
-    <nav>
-        <a href="https://github.com/StevLuu" class="link" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/stevluu/" class="link" target="_blank">linkedIn</a>
-        <a href="#" class="link">undecided</a>
-    </nav>
-</header>
 <body>
-    <h1>Homepage</h1>
-    <section>
-        welcome to my website! This is probably filler text until I decide on meaningful content to include!
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-       blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "bio">
-        <h1>ALL about me</h1>
-        Hello,
-        My name is Steven M. Luu!
-        I love to take photos and travel. Although I haven't been able to travel since COVID I am excited for my next opportunity
-        I edit my own photos and do some videography on my DJ Mavric
-        I am also a gamer and enjoy playing games with my friends online.
-        I have an interest in game development, AR/VR, and game design.
-        I am a Texas-based 21 year-old college student. I am currently taking a coding bootcamp through General Assembly!
+    <!--
+        <header>
+    
+        <nav>
+            <a href="https://github.com/StevLuu" class="link" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/stevluu/" class="link" target="_blank">linkedIn</a>
+            <a href="#" class="link">undecided</a>
+        </nav>
+    </header>
+-->
+    <header class="header">
+        <button class="header-button" id="buttonNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+    </header>
+    <nav class="navs">
+        <div class="links">
+            <a href="homepage.html" class="link">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a href="bio.html" class="link">
+                <i class="material-icons">contact_support</i>
+                About Me
+            </a>
+            <a href="projects.html" class="link">
+                <i class="material-icons">inventory_2</i>
+                Projects
+            </a>
+            <a href="resume.html" class="link">
+                <i class="material-icons">description</i>
+                Resume
+            </a>
+        </div>
+        <div class="nav-overlay">
+
+        </div>
+    </nav>
 
 
-        Hello,
-        My name is Steven M. Luu!
-        I love to take photos and travel. Although I haven't been able to travel since COVID I am excited for my next opportunity
-        I edit my own photos and do some videography on my DJ Mavric
-        I am also a gamer and enjoy playing games with my friends online.
-        I have an interest in game development, AR/VR, and game design.
-        I am a Texas-based 21 year-old college student. I am currently taking a coding bootcamp through General Assembly!
+    <main>
+    <section id="homepage">
+        <h1>Homepage</h1>
+        <p>
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+            welcome to my website! This is probably filler text until I decide on meaningful content to include!
+        </p>
         
     </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
-    <section id = "filler">
-        <h1>blah blah</h1>
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
-    </section>
+    </main>
 </body>
 </html>
