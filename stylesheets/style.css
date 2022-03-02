@@ -2,6 +2,7 @@ html{
     background-image: url("../images/KO2_1112.jpg");
 }
 h1{
+    margin: auto;
     text-align: center;
 }
 body{
@@ -85,8 +86,35 @@ body{
     opacity: 1;
 }
 
-section.page{
+.page{
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.page#resume{
+    border: 3px solid black;
+    padding: 40px;
+    background-color: white;
+    margin: 10px;
+}
+
+/* Bio styles */
+.page ul#aboutMe{
+    list-style: none;
+}
+.imgs{
+    display: flex;
+    align-items: center;
+}
+.img{
+    max-width:95%;
+    height:auto;
+}
+
+main.page ul#resumeBasicInfo{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
 #projects{
@@ -112,9 +140,6 @@ section.page{
 
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
     .link{
         display: flex;
         align-items: center;
@@ -132,5 +157,13 @@ section.page{
 
     .project{
         flex-direction: row;
+    }
+/* bio image resize on moble */
+    .imgs{
+        padding: 20;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
