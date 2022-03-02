@@ -118,7 +118,7 @@ function playGame(){
 
 
 document.addEventListener("DOMContentLoaded", () =>{
-    const nav = document.querySelector(".navs");
+    let nav = document.querySelector(".navs");
     document.querySelector("#buttonNav").addEventListener("click", () =>{
         nav.classList.add("nav--open");
     });
@@ -132,4 +132,7 @@ document.addEventListener("DOMContentLoaded", () =>{
         //i couldnt figure out how to run the landscaper js file so i copied it directly and added a play game function
         playGame()
     });
+
+
+
 });

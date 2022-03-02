@@ -1,5 +1,6 @@
 html{
     background-image: url("../images/KO2_1112.jpg");
+    font-family: 'Share Tech Mono', monospace;
 }
 h1{
     margin: auto;
@@ -97,6 +98,23 @@ body{
     background-color: white;
     margin: 10px;
 }
+/* Homepage styles */
+#homepage{
+    text-align: center;
+    font-size: 35px;
+}
+
+.homePageLinks{
+    padding: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.homePageLinks > li{
+    color:rgb(40, 88, 88);
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
 
 /* Bio styles */
 .page ul#aboutMe{
@@ -172,4 +190,14 @@ main.page ul#resumeBasicInfo{
         align-items: center;
         flex-direction: column;
     }
+    .homePageLinks{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .homePageLinks > li{
+        padding: 2px;
+        border: 1px solid black;
+    }
+    
 }
